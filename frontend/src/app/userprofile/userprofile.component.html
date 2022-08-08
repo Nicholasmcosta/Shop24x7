@@ -1,0 +1,31 @@
+<div class="container"  style="min-height:600px">
+    <div class="card">
+        <div class="card-header text-center">
+            <img src="{{user.profilePic}}"  class="card-img-top"  style="width:12rem;" />
+            <h2>{{user.firstName | titlecase}} {{user.lastName | titlecase}}</h2>
+        </div>
+        <div class="card-body text-center">
+            <h5 class="card-title text-center">User ID</h5>
+            <p class="text-center">{{id}} </p>
+            
+            
+            <h5 class="card-title text-center">Email</h5>
+            <p class="text-center">{{user.username}} </p>
+            
+            <h5 class="card-title text-center">Phone No</h5>
+            <p class="text-center">{{user.phone}} </p>
+            
+            <h5 class="card-title text-center">Address</h5>
+            <p class="text-center">{{user.address}} </p>
+            
+            
+        </div>
+
+        <div class="card-footer text-center">
+            <a class="btn btn-outline-primary me-2" routerLink="">Go Back</a>
+            <a [routerLink]="['/usereditprofile']" class="btn btn-primary">Edit Details</a>
+        </div>
+           
+
+    </div>
+</div>

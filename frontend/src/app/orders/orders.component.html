@@ -1,0 +1,19 @@
+<div class="container" style="min-height:600px">
+    <h2> Your Orders</h2>
+
+    <div *ngFor="let order of orderList.reverse()" class="row card mb-3">
+        <div class="card-header">
+            <b>#{{order._id | uppercase}}</b>
+        </div>
+        <div class="card-body">
+            <ul *ngFor="let item of order.items">
+                <li>{{item}}</li>
+            </ul>
+            <!-- <b> {{order.userEmail}}</b><br/> -->
+        </div>
+        <div class="card-footer">
+            Total :<b> {{order.total | currency}}</b>
+        </div>
+        
+    </div>
+</div>

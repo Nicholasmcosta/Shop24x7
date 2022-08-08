@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row g-3">
+        <div class="col-3">
+            <div class="card fw-bold border-0">
+                <div class="card-body">
+                    Price Range
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" (click)="priceRange(5, 50)"><button class="btn btn-link-dark p-0 fw-bold" id="button">$5 - $50</button></li>
+                        <li class="list-group-item" (click)="priceRange(50, 150)"><button class="btn btn-link-dark p-0 fw-bold" id="button">$50 - $150</button></li>
+                        <li class="list-group-item" (click)="priceRange(150, 500)"><button class="btn btn-link-dark p-0 fw-bold" id="button">$150 - $500</button></li>
+                        <li class="list-group-item" (click)="priceRange(500, 1000)"><button class="btn btn-link-dark p-0 fw-bold" id="button">$500 - $1000</button></li>
+                        <li class="list-group-item" (click)="priceRange(1000, 5000)"><button class="btn btn-link-dark p-0 fw-bold" id="button">$1000 - $5000</button></li>
+                        <li class="list-group-item" (click)="priceRange(0, MAX)"><button class="btn btn-link-dark p-0 fw-bold" id="button">Reset</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h2>{{ department.replace('-', ' ') }}</h2>
+            <div class="row row-cols-3">
+                <ng-container *ngFor="let product of productList | filter:min:max">
+                    <div class="col mb-3" *ngIf="product.department == department">
+                        <div class="card" *ngIf="!product.topSelling; else elseBlock">
+                            <div class="card-header" style="font-size: small;">{{ product.productName }}</div>
+                            <img src="{{ product.image }}" alt="..." width="100%" height="250px" style="object-fit: cover;">
+                            <div class="card-footer">
+                                {{ product.discountPrice | currency }}
+                                <button (click)="addToCart(product)" class="btn btn-outline-primary btn-sm float-end">Add to Cart</button>
+                            </div>
+                        </div>
+                        <ng-template #elseBlock>
+                            <div class="card text-dark">
+                                <div class="card-header" style="font-size: small; background-color:yellow">Top Selling Product! <br>  {{ product.productName }} </div>
+                                <img src="{{ product.image }}" alt="..." width="100%" height="250px" style="object-fit: cover;">
+                                <div class="card-footer">
+                                    {{ product.discountPrice | currency }}
+                                    <button (click)="addToCart(product)" class="btn btn-outline-primary btn-sm float-end">Add to Cart</button>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>

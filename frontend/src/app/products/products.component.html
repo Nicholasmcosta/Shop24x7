@@ -1,0 +1,15 @@
+
+    <div class="row row-cols-4">
+        <div class="col mb-4" *ngFor="let product of productList">
+            <div class="card shadow-sm">
+                <h6>{{product.productName}}</h6>
+                <a [routerLink]="['/product-detail', product._id]" (click)="refresh"><img src="{{ product.image }}" alt="{{ product.productName }}" width="100%" height="225" style="object-fit: cover;"></a>
+                <div class="card-footer">
+                    {{ product.discountPrice | currency }}
+                    <button (click)="addToCart(product)" class="btn btn-outline-primary btn-sm float-end">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+

@@ -1,0 +1,78 @@
+<div class="container" style="min-height:600px">
+	<h2>Checkout</h2>
+	<div class="checkout-form">
+
+        <br>
+        <h3>User Info</h3>
+        <!--User Info-->
+        
+        <div class="mb-3">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="text" class="form-control" [(ngModel)]="user.firstName" name="firstName"
+            readonly/>
+        </div>
+        <div class="mb-3">
+            <label for="firstname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" [(ngModel)]="user.lastName" name="lastName"
+            readonly/>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" [(ngModel)]="user.username" name="username"
+            readonly/>
+        </div>
+        
+        <br>
+
+		<form [formGroup]="checkoutForm" (ngSubmit)="checkout()" class="mb-3">
+            <h3>Shipping Address</h3>
+            <!--Shipping Info-->
+            <div class="mb-3">
+                <input type="text" name="streetAddress" formControlName="streetAddress"
+                    [ngClass]="{ 'is-invalid': f.streetAddress.touched && f.streetAddress.invalid }"
+                    class="form-control" placeholder="Street Address">
+                <div *ngIf="f.streetAddress.touched && f.streetAddress.invalid" class="invalid-feedback">
+                    <div *ngIf="f.streetAddress.errors?.required">Street Address is Required.</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <input type="text" name="city" formControlName="city"
+                    [ngClass]="{ 'is-invalid': f.city.touched && f.city.invalid }"
+                    class="form-control" placeholder="City">
+                <div *ngIf="f.city.touched && f.city.invalid" class="invalid-feedback">
+                    <div *ngIf="f.city.errors?.required">City is Required.</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <input type="text" name="state" formControlName="state"
+                    [ngClass]="{ 'is-invalid': f.state.touched && f.state.invalid }"
+                    class="form-control" placeholder="State">
+                <div *ngIf="f.state.touched && f.state.invalid" class="invalid-feedback">
+                    <div *ngIf="f.state.errors?.required">State is Required.</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <input type="text" name="zipCode" formControlName="zipCode"
+                    [ngClass]="{ 'is-invalid': f.zipCode.touched && f.zipCode.invalid }"
+                    class="form-control" placeholder="Zip Code">
+                <div *ngIf="f.zipCode.touched && f.zipCode.invalid" class="invalid-feedback">
+                    <div *ngIf="f.zipCode.errors?.required">Zip Code is Required.</div>
+                    <div *ngIf="f.zipCode.errors?.pattern" >Zip code must be numbers only.</div>
+                </div>
+            </div>
+
+			<div class="form-group">
+                <input type="submit" value="Place Order" [disabled]="!checkoutForm.valid"
+                class="btn btn-success btn-sm" />
+			</div>
+        
+    	</form>
+	
+</div>
+
+</div>
+
+

@@ -1,0 +1,49 @@
+
+
+<div class="container" style="min-height:600px">
+    <div class="card">
+        <div class="card-header">
+            <h2> User Details</h2>
+        </div>
+
+        <div class="card-body">
+            <form >
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="firstName" placeholder="First Name" [(ngModel)]="editUser.firstName" required>
+                </div>
+        
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="lastName" placeholder="Last Name" [(ngModel)]="editUser.lastName" required>
+                </div>
+        
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="username" placeholder="Email" [(ngModel)]="editUser.username" disabled>
+                </div>
+        
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="phone" placeholder="Phone" [(ngModel)]="editUser.phone" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="address" placeholder="Address" [(ngModel)]="editUser.address" required>
+                </div>
+
+                <br />
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary" (click)="updateUser()">Update</button> &nbsp;
+                    <!-- <input type="submit" value="Update" class="btn btn-secondary"/> &nbsp; -->
+                    <button type="button" routerLink="/profile" class="btn btn-outline-primary">Back</button>
+                </div>
+                
+               
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+

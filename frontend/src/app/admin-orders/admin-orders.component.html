@@ -1,0 +1,20 @@
+<div class="container" style="min-height: 600px;">
+    <h2> Manage Orders</h2>
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let order of orderList.reverse()">
+                
+                <td *ngIf="order.isDelivered" style="color: green;"><b>#{{order._id | uppercase}}</b><br>
+                {{order.userEmail}}</td>
+                <td *ngIf="!order.isDelivered"><b>#{{order._id | uppercase}}</b><br>
+                {{order.userEmail}}</td>
+                
+                <td >
+                    <button *ngIf="!order.isDelivered" type="button" (click)="processOrder(order._id, order)" class="btn btn-outline-primary me-2">Process</button>
+                    <button type="button" (click)="deleteOrder(order._id)" class="btn btn-outline-danger">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>

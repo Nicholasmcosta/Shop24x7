@@ -1,0 +1,98 @@
+[{
+  "_id": {
+    "$oid": "61038a2aeb20e62c5c2c8659"
+  },
+  "items": [
+    "Apple iPhone X",
+    "Sony 50\" Class X80J Series LED 4K "
+  ],
+  "status": false,
+  "userId": "60ff2646121cc71380b13e47",
+  "userEmail": "jon-doe@yahoo.com",
+  "total": 1598,
+  "__v": 0,
+  "isDelivered": true,
+  "orderDeliveredOn": {
+    "$date": "2021-07-30T13:54:09.125Z"
+  },
+  "orderPlacedOn": {
+    "$date": "2021-07-30T13:54:03.635Z"
+  }
+},{
+  "_id": {
+    "$oid": "6103906229ca0c2fbcdb47da"
+  },
+  "items": [
+    "Apple iPhone X",
+    "Sony 50\" Class X80J Series LED 4K "
+  ],
+  "isDelivered": true,
+  "userId": "60ff2646121cc71380b13e47",
+  "userEmail": "jon-doe@yahoo.com",
+  "total": 1598,
+  "orderPlacedOn": {
+    "$date": "2021-07-30T05:38:42.462Z"
+  },
+  "orderDeliveredOn": {
+    "$date": "2021-07-30T05:50:25.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61040abac0babc0d2416a2eb"
+  },
+  "items": [
+    "Apple iPhone X",
+    "Lenovo IdeaPad 3"
+  ],
+  "isDelivered": true,
+  "userId": "6104098cc0babc0d2416a2d2",
+  "userEmail": "achance@gmail.com",
+  "total": 1548,
+  "orderPlacedOn": {
+    "$date": "2021-07-30T14:20:42.509Z"
+  },
+  "orderDeliveredOn": {
+    "$date": "2021-07-30T14:27:13.655Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61040ae3c0babc0d2416a2f5"
+  },
+  "items": [
+    "Lenovo ThinkPad E15 Gen2"
+  ],
+  "isDelivered": false,
+  "userId": "6104098cc0babc0d2416a2d2",
+  "userEmail": "achance@gmail.com",
+  "total": 1249,
+  "orderPlacedOn": {
+    "$date": "2021-07-30T14:21:23.897Z"
+  },
+  "orderDeliveredOn": {
+    "$date": "2021-07-30T14:21:23.897Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610419a6c0babc0d2416a379"
+  },
+  "items": [
+    "Apple iPhone 12 Pro Max",
+    "Sony 50\" Class X80J Series LED 4K",
+    "Sony 50\" Class X80J Series LED 4K",
+    "Samsung 50\" Class 7 Series LED Smart TV"
+  ],
+  "isDelivered": false,
+  "userId": "60ff2646121cc71380b13e47",
+  "userEmail": "jon-doe@yahoo.com",
+  "total": 2877,
+  "orderPlacedOn": {
+    "$date": "2021-07-30T15:24:22.117Z"
+  },
+  "orderDeliveredOn": {
+    "$date": "2021-07-30T15:24:22.117Z"
+  },
+  "__v": 0
+}]

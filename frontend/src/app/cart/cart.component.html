@@ -1,0 +1,15 @@
+<div class="container" style="min-height:600px">
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Cart</h5>
+      <div class="container" *ngFor="let item of items">
+        <p class="card-text"> {{ item.productName }} : {{ item.price | currency }}  </p>
+      </div>
+      <div *ngIf="total !=0" class="card-footer">
+        <p class="card-text"> Total: {{ total | currency }} </p>
+        <button routerLink='/checkout' (click)="confirm()" class="btn btn-success">Place Order</button>
+        <button (click)="clear()" class="btn btn-danger">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+</div>

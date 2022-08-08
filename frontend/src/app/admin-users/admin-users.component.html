@@ -1,0 +1,28 @@
+
+<div class="container"  style="min-height:600px">
+    <h2> Manage Users </h2>
+    <a href="admin/addUser" class="btn btn-outline-primary">Add a new User</a>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Phone</th>
+                <th>Admin</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userList">
+                <td>{{user.firstName + ' ' + user.lastName }}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.phone}}</td>
+                <td>{{user.admin}}</td>
+                <td><a [routerLink]="['/admin/users/update', user._id]" class="btn btn-outline-info" >Edit</a>&nbsp;
+                    <a (click)="deleteUser(user._id)" class="btn btn-outline-danger" >Delete</a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

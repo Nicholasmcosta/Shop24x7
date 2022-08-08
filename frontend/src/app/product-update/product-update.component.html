@@ -1,0 +1,122 @@
+
+<div class="container align-items-center">
+    <div class="form-group align-items-center">  
+        <form  name="form" #prodForm="ngForm" (ngSubmit)="prodForm.form.valid && updateProduct() " >
+    <br/>
+        <div class="mb-3 col-md-4">
+            <label for="name" class="form-label" >Product Name</label>
+            <input type="text" class="form-control" name="productName" [(ngModel)]="product.productName" required placeholder="Enter Product name"
+             #productName="ngModel" [ngClass]="{'is-invalid':productName.touched && productName.invalid}" maxlength="60" required/>
+    
+             <div *ngIf="productName.touched && productName.invalid" class="invalid-feedback">
+                 <div *ngIf="productName.errors.required">
+                     Product Name is required and not more than 60 Chars.
+                 </div>
+                 <div *ngIf="productName.errors.maxlength">
+                    Product Name Should not be more than 60 Chars.
+                </div>
+             </div>
+        </div>
+    
+        <div class="mb-3 col-md-4">
+            <label for="name" class="form-label" >Department</label>
+            <input type="text" class="form-control" name="department" [(ngModel)]="product.department" required placeholder="Enter Product Department"
+            #department="ngModel" [ngClass]="{'is-invalid':department.touched && department.invalid}" required/>
+            <div *ngIf="department.touched && department.invalid" class="invalid-feedback">
+                <div *ngIf="department.errors.required">
+                    Department is required and Must be a valid name
+                </div>
+            </div>
+        </div>
+    
+        <div class="mb-3 col-md-4">
+            <label for="price" class="form-label" >Price</label>
+            <input type="text" class="form-control" name="price" [(ngModel)]="product.price" placeholder="Enter  Price"
+            #price="ngModel" [ngClass]="{'is-invalid':price.touched && price.invalid}" minlength="1" maxlength="6" required/>
+            <div *ngIf="price.touched && price.invalid" class="invalid-feedback">
+                <div *ngIf="price.errors.required">
+                    Price is required and not be more than 6 Chars.
+                </div>
+                <div *ngIf="price.errors.minlength">
+                    Price Should be atleast 1 and maximum 6 chars long.
+                </div>
+                <div *ngIf="price.errors.maxlength">
+                    Price Should be  maximum 6 chars long.
+                </div>
+                
+            </div>
+    
+        </div>
+    
+        <div class="mb-3 col-md-4">
+            <label for="discount price" class="form-label" >Discount Price</label>
+            <input type="text" class="form-control" name="discountPrice" [(ngModel)]="product.discountPrice" placeholder="Enter  Dsicount Price"
+            #discountPrice="ngModel" [ngClass]="{'is-invalid':discountPrice.touched && discountPrice.invalid}" minlength="1" maxlength="6" required/>
+            <div *ngIf="discountPrice.touched && discountPrice.invalid" class="invalid-feedback">
+                <div *ngIf="discountPrice.errors.required">
+                   Dsicount Price is required and not be more than 6 Chars.
+                </div>
+                <div *ngIf="discountPrice.errors.minlength">
+                    Discount Price Should be atleast 1 and maximum 6 chars long and should not be greater than Price.
+                </div>
+                <div *ngIf="discountPrice.errors.maxlength">
+                    Discount Price Should be  maximum 6 chars long and should not be greater than Price.
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="mb-3 col-md-4">
+            <label for="image" class="form-label" >Image</label>
+            <input type="text" class="form-control" name="image" [(ngModel)]="product.image" placeholder="product image" 
+            #image="ngModel" [ngClass]="{'is-invalid':image.touched && image.invalid}" required  />
+    
+            <div *ngIf="image.touched && image.invalid" class="invalid-feedback">
+                <div *ngIf="image.errors.required">
+                    Image is required.
+                </div>
+            </div>
+        </div>
+    
+        <div class="mb-3 col-md-4 ">
+            <label for="description" class="form-label" >Description</label>
+            <input type="text" class="form-control" name="description" [(ngModel)]="product.description" placeholder="Description"
+            #description="ngModel" [ngClass]="{'is-invalid':description.touched && description.invalid}" minlength="60" required/>
+            <div *ngIf="description.touched && description.invalid" class="invalid-feedback">
+                <div *ngIf="description.errors.required">
+                    Description is Required 
+                </div>
+                <div *ngIf="description.errors.minlength">
+                    Description Should be Atleast 60 Chars.
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="makeTopSellingProduct" [(ngModel)]="product.topSelling" value=true>
+            <label class="form-check-label" for="flexSwitchCheckDefault">Top Selling Product</label>
+        </div>
+        
+        <div class="mb-3 col-md-4">
+        
+            <input type="button" value="Update product" class="btn btn-secondary"  (click)="updateProduct()" class="btn btn-success me-2" /> 
+    
+            <input type="button" value="Go Back" class="btn btn-secondary" routerLink="/admin/manage-products" class="btn btn-danger"/>
+    
+           
+        </div>
+        
+          <!--<input type="checkbox" [(ngModel)]="product.isTopProduct" name="isTopProduct" value="isTopProduct"> Is Top Product
+          
+    
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="makeTopSellingProduct" [(ngModel)]="product.topSelling" value=true>
+            <label class="form-check-label" for="flexSwitchCheckDefault">Top Selling Product</label>
+        </div>
+          -->
+        
+        
+    </form>
+    </div>
+    
+    </div>

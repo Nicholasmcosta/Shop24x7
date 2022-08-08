@@ -1,0 +1,37 @@
+
+
+<div class="container">
+    <div class="row mb-3">
+        <div class="col">
+            <app-carousel></app-carousel>
+        </div>
+    </div>
+    <h3>Categories</h3>
+    <div class="row g-3 mb-5">
+        <div class="col">
+            <div class="card shadow-sm">
+                <a [routerLink]="['/category-listing', 'Mobiles']"><img src="https://cdn.tmobile.com/content/dam/t-mobile/ntm/generic/pattern-abstract/full/bg-heroFull-multiple_phones_aerial.desktop.jpg" width="100%" height="225" class="card-img-top" alt="..." style="object-fit: cover;" ></a>
+                <h6>Mobiles</h6>
+            </div>
+        </div>
+        <div class="col">
+            <a [routerLink]="['/category-listing', 'Laptops']"><img src="https://cdn.mos.cms.futurecdn.net/X5TyA8uvkGXoNyjFzxcowS.jpg" width="100%" height="225" class="card-img-top" alt="..." style="object-fit: cover;" ></a>
+            <h6>Laptops</h6>
+        </div>
+       <div class="col">
+            <a [routerLink]="['/category-listing', 'Televisions']"><img src="https://i.rtings.com/assets/pages/PtBw4Lf8/best-tv-medium.jpg" width="100%" height="225" class="card-img-top" alt="..." style="object-fit: cover;" ></a>
+            <h6>Televisions</h6>  
+            </div>
+    </div>
+        
+        
+        <h3>Top Products</h3>
+        <div class="row row-cols-4 mb-3">
+            <div class="col mb-3" *ngFor="let product of productList.slice(0,8)">
+                <div class="card shadow-sm">
+                    <a [routerLink]="['/product-detail', product._id]"><img src="{{ product.image }}" alt="{{ product.productName }}" width="100%" height="250px" style="object-fit: cover;"></a>
+                <h6>  {{product.productName}} </h6>
+                </div>
+    </div>
+</div>
+</div>

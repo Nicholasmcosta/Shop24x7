@@ -1,0 +1,58 @@
+  
+  <header class="p-3 bg-dark text-light">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between justify-content-lg-start">
+        <!-- <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a> -->
+
+        <a routerLink="homepage"><img src="./images/logo.png" style="width:5rem"></a>
+
+       <ul class="nav col-12 col-md-auto me-md-auto mb-2 justify-content-center mb-md-0">
+        
+          <li><a routerLink="/homepage" class="nav-link px-2 text-secondary">Home</a></li>
+          <!-- <li><a routerLink="/category-listing" class="nav-link px-2 text-secondary">Categories</a></li>  -->
+          <li><a routerLink="/products" class="nav-link px-2 text-secondary">Products</a></li> 
+          <li><a routerLink="/cart" class="nav-link px-2 text-secondary">Cart</a></li> 
+
+
+        </ul>
+        
+        <div *ngIf="isAdmin" class="okaydown me-2">
+          <button class="btn btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown">
+            Admin Controls
+          </button>
+        
+          <ul class="dropdown-menu">
+            <li><a routerLink="/admin/manage-products" class="dropdown-item">Manage Products</a></li>
+            <li><a routerLink="/admin/users" class="dropdown-item">Manage Users</a></li>
+            <li><a routerLink="/admin/orders" class="dropdown-item">Manage Orders</a></li>
+            <li><a routerLink="/profile" class="dropdown-item">Profile</a></li>
+          </ul>  
+      </div>
+
+      <div *ngIf="!isAdmin && loginStatus" class="okaydown me-2">
+        <button class="btn btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown">
+           {{firstName | titlecase}}
+        </button>
+      
+        <ul class="dropdown-menu">
+          <li ><a routerLink="/orders" class="dropdown-item">Orders</a></li>
+          <li><a routerLink="/profile" class="dropdown-item">Profile</a></li>
+        </ul>  
+    </div>
+
+        <div class="text-end">
+          <button *ngIf="!loginStatus" type="button" routerLink="/login" class="btn btn-outline-light me-2">Login</button>
+          <button *ngIf="!loginStatus" type="button" routerLink="/register" class="btn btn-success me-2">Register</button>
+          <button *ngIf="loginStatus" type="button" (click)="logout()" class="btn btn-outline-danger">Logout</button>
+        </div>
+      </div>
+  </header>
+ 
+<router-outlet></router-outlet>
+
+<div class="card-footer text-muted">
+  <p style="text-align: center;"><b>Copyright (c) 2021 shop24x7.com - All rights reserved Shop24x7 <br/>
+    Contact At: admin@shop24x7.com </b> </p>
+</div>
+

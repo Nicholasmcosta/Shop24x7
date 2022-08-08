@@ -1,0 +1,168 @@
+[{
+  "_id": {
+    "$oid": "6101c72126943745ace52f58"
+  },
+  "topSelling": true,
+  "productName": "Apple iPhone X",
+  "department": "Mobiles",
+  "price": 899,
+  "discountPrice": 799,
+  "image": "https://www.apple.com/newsroom/images/product/iphone/standard/iPhone_X_blk_lockup_20171107_big.jpg.large.jpg",
+  "description": "Packed with Innovative Features Including a Super Retina Display, TrueDepth Camera System, Face ID and A11 Bionic Chip with Neural Engine",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6102cb89ff8b62364c56bf08"
+  },
+  "topSelling": false,
+  "productName": "Apple iPhone 12 Pro Max",
+  "department": "Mobiles",
+  "price": 1000,
+  "discountPrice": 949,
+  "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-max-family-hero-all?wid=470&amp;hei=556&amp;fmt=jpeg&amp;qlt=95&amp;.v=1604021663000",
+  "description": "As part of our efforts to reach our environmental goals, iPhone 11 does not include a power adapter or EarPods. Included in the box is a USB‑C to Lightning cable that supports fast charging and is compatible with USB‑C power adapters and computer ports.  We encourage you to re‑use your current USB‑A to Lightning cables, power adapters, and headphones which are compatible with this iPhone. But if you need any new Apple power adapters or headphones, they are available for purchase.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6102ce40ff8b62364c56bf1c"
+  },
+  "topSelling": false,
+  "productName": "Lenovo ThinkPad E15 Gen2",
+  "department": "Laptops",
+  "price": 1249,
+  "discountPrice": 1049,
+  "image": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-e15-gen-2-subseries-hero.png?context=bWFzdGVyfHJvb3R8MjU5NDI2fGltYWdlL3BuZ3xoZTgvaDk0LzExMTQxMjcwMzM5NjE0LnBuZ3xmODdjNjNjNWJiNTQzMzU1ZGQ4NWQ0YTQxZGJmOTg5MTQ4ZDRiODY3MDFiZmQ2NDJlNjA4OTQ4YzNhMmNiZTVj",
+  "description": "The ThinkPad E15 Gen 2 laptop harnesses the power of an 11th Gen Intel® Core™ processor along with DDR4 memory and up to 1TB solid state storage drive to deliver high performance to your workday. It confidently handles whatever tasks come your way, and it even intelligently maintains the optimum temperature while running multiple apps.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61009dadf0e7883148a6bdf3"
+  },
+  "productName": "Apple iPhone 11 Pro",
+  "department": "Mobiles",
+  "price": 900,
+  "discountPrice": 849,
+  "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-11-Pro_Colors_091019_big.jpg.large.jpg",
+  "description": "iPhone 11 Pro has a textured matte glass back and polished stainless steel band, and come in four stunning finishes including a beautiful new midnight green. The most powerful devices are also designed to be durable — iPhone 11 Pro and iPhone 11 Pro Max feature the toughest glass ever in a smartphone and are rated IP68 for water resistance up to 4 meters for up to 30 minutes, and are protected against everyday spills including coffee and soda.",
+  "__v": 0,
+  "topSelling": false
+},{
+  "_id": {
+    "$oid": "61009fe15afff239d0ef8835"
+  },
+  "productName": "Lenovo ThinkPad T490",
+  "department": "Laptops",
+  "price": 2789,
+  "discountPrice": 2499,
+  "description": "With a starting weight of just 3.23lb / 1.46kg, the ThinkPad T490 is perfect for portability. A slim bezel keeps the focus on a larger screen area than previous models, and there’s a range of display options from touchscreen to built-in PrivacyGuard to Dolby Vision®. Long battery life and robust security make this the laptop for serious business professionals.",
+  "__v": 0,
+  "image": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-t490-hero-1126.png?context=bWFzdGVyfHJvb3R8Nzg4OTN8aW1hZ2UvcG5nfGg5Ni9oYTcvMTA2NzMyMDYyNjM4MzgucG5nfDllOTUyNGM1OGYxNjkxNGU2ZTMxNWQxMTE1NDQ0MGZkNDU4ZWYwOWExZWZjMDJkMDRiZTIwYjc0OGE5NGUwMzA",
+  "topSelling": false
+},{
+  "_id": {
+    "$oid": "610154dde8b3d025044461c3"
+  },
+  "productName": "Samsung Galaxy Note 20",
+  "department": "Mobiles",
+  "price": 1000,
+  "discountPrice": 950,
+  "image": "https://m.media-amazon.com/images/I/81AT+Flc+EL._AC_SL1500_.jpg",
+  "description": "Samsung Note 20, 5G 128 GB New Condition",
+  "__v": 0,
+  "topSelling": false
+},{
+  "_id": {
+    "$oid": "61015710bd85065ac87fdb47"
+  },
+  "productName": "Lenovo IdeaPad 3",
+  "department": "Laptops",
+  "price": 649,
+  "discountPrice": 609,
+  "description": "2021 Newest Lenovo Ideapad 3 Laptop, 15.6\" HD Non-Touchscreen Display, AMD Ryzen 3 3250U Processor, 20GB DDR4 RAM, 512GB PCIe SSD, HDMI, Wi-Fi, Webcam, Bluetooth, Windows 10 Home, KKE Mousepad, Black",
+  "__v": 0,
+  "image": "https://m.media-amazon.com/images/I/81ELTq1ZMYL._AC_SY450_.jpg",
+  "topSelling": false
+},{
+  "_id": {
+    "$oid": "61017126bd85065ac87fdb72"
+  },
+  "productName": "MacBook Pro 13\"",
+  "department": "Laptops",
+  "price": 1299,
+  "discountPrice": 1249,
+  "image": "https://www.apple.com/v/macbook-pro-13/g/images/overview/hero_endframe__bsza6x4fldiq_large.jpg",
+  "description": "The Apple M1 chip gives the 13‑inch MacBook Pro speed and power beyond belief. With up to 2.8x CPU performance. Up to 5x the graphics speed. Our most advanced Neural Engine for up to 11x faster machine learning. And up to 20 hours of battery life — the longest of any Mac ever. It’s our most popular pro notebook, taken to a whole new level.",
+  "__v": 0,
+  "topSelling": true
+},{
+  "_id": {
+    "$oid": "6101724fbd85065ac87fdb7a"
+  },
+  "description": "Our thinnest, lightest notebook, completely transformed by the Apple M1 chip. CPU speeds up to 3.5x faster. GPU speeds up to 5x faster. Our most advanced Neural Engine for up to 9x faster machine learning. The longest battery life ever in a MacBook Air. And a silent, fanless design. This much power has never been this ready to go.",
+  "productName": "MacBook Air 13\" 256GB",
+  "department": "Laptops",
+  "price": 999,
+  "discountPrice": 949,
+  "image": "https://www.apple.com/v/macbook-air/j/images/overview/hero_endframe__ea0qze85eyi6_large.jpg",
+  "__v": 0,
+  "topSelling": false
+},{
+  "_id": {
+    "$oid": "610174afbd85065ac87fdb97"
+  },
+  "productName": "OnePlus 9",
+  "department": "Mobiles",
+  "price": 1000,
+  "discountPrice": 900,
+  "image": "https://image01.oneplus.net/ebp/202103/12/1-m00-21-f0-rb8lb2blkveajfuzaajxhs8kwbw138_840_840.png",
+  "description": "• Hasselblad Camera for Mobile • Qualcomm® Snapdragon™ 888 and 5G • 120 Hz Fluid Display • 65W Ultra Fast Charging & 50W Wireless Charging Installment Offer Enjoy 0% APR financing for up to 6 months.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61017568bd85065ac87fdb9e"
+  },
+  "productName": "Samsung Galaxy Note 20 Ultra",
+  "department": "Mobiles",
+  "price": 899,
+  "discountPrice": 849,
+  "image": "https://m.media-amazon.com/images/I/81PFi-YatXL._AC_SX679_.jpg",
+  "description": "S PEN & SAMSUNG NOTES: Pen precision meets PC power with S Pen & Samsung Notes. So responsive, it feels like you're using a real pen. DISPLAY & GAMING: Breathtaking screen refresh rate, adaptive Dynamic AMOLED 2X display, Galaxy 5G support & advanced processor, allow for a smooth gaming experience.",
+  "__v": 0,
+  "topSelling": false
+},{
+  "_id": {
+    "$oid": "61018921bd85065ac87fdc0e"
+  },
+  "productName": "Samsung 50\" Class 7 Series LED Smart TV",
+  "department": "Televisions",
+  "price": 479,
+  "discountPrice": 459,
+  "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401738_sd.jpg;maxHeight=640;maxWidth=550",
+  "description": "Build an immersive media room with this 50-inch Samsung Smart TV. The Crystal 4K processor automatically improves the image quality of everything you watch, and the HDR technology makes colors look vivid and lifelike. This Samsung Smart TV has a universal guide that organizes live and streamed content so you can find what you're looking for quickly.",
+  "__v": 0,
+  "topSelling": false
+},{
+  "_id": {
+    "$oid": "61018979bd85065ac87fdc11"
+  },
+  "productName": "LG 50\" Class UN7000 LED 4K Smart TV",
+  "department": "Televisions",
+  "price": 399,
+  "discountPrice": 359,
+  "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6417/6417301_sd.jpg;maxHeight=640;maxWidth=550",
+  "description": "LG UHD TV is your ticket to a stunning picture. Get easy access to new and popular apps like Disney+, the Apple TV app, Sling and more. Elevate entertainment with surround sound, auto picture settings of Filmmaker Mode™ and convenient updates of Sports Alert.",
+  "__v": 0,
+  "topSelling": false
+},{
+  "_id": {
+    "$oid": "610379b3d1a74b1980663853"
+  },
+  "topSelling": true,
+  "productName": "Sony 50\" Class X80J Series LED 4K",
+  "department": "Televisions",
+  "price": 699,
+  "discountPrice": 659,
+  "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453619_sd.jpg;maxHeight=640;maxWidth=550",
+  "description": "Enjoy a 4K HDR smart TV experience with natural color and clear sound. The powerful X1 4K HDR Processor reduces digital noise and boosts details for lifelike picture quality. Google TV gives you access to all your favorite streaming apps, while Google Assistant easily searches for content and controls your smart home simply by using your voice.",
+  "__v": 0
+}]
